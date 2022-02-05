@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design system</title>
+
+    <link rel="stylesheet" href="./design-style.css" />
+  </head>
+  <body class="bck-clr-dark">
+    <header class="wrapper">
+      <div class="circle">
+        <div class="circle__element left top brdr-rd-br"></div>
+        <div class="circle__element right top brdr-rd-bl"></div>
+        <div class="circle__element left bottom brdr-rd-tr"></div>
+        <div class="circle__element right bottom brdr-rd-tl"></div>
+      </div>
+    </header>
+
+    <main class="wrapper text-white">
+      <div class="heading">
+        <p class="uppercase"><span class="fw-bold">01</span>colors</p>
+      </div>
+
+      <div class="colors flex">
+        <div>
+          <div class="color-block flex bck-clr-dark">
+            <p>#0B0D17</p>
+          </div>
+          <div>
+            <p><span class="text-light">RGB</span>11, 13, 23</p>
+            <p><span class="text-light">HSL</span>230°, 35%, 7%</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="color-block flex bck-clr-light text-dark">
+            <p>#D0D6F9</p>
+          </div>
+          <div>
+            <p><span class="text-light">RGB</span>208, 214, 249</p>
+            <p><span class="text-light">HSL</span>231°, 77%, 90%</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="color-block flex bck-clr-white text-dark">
+            <p>#FFFFFF</p>
+          </div>
+          <div>
+            <p><span class="text-light">RGB</span>255, 255, 255</p>
+            <p><span class="text-light">HSL</span>0°, 0%, 100%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="heading">
+        <p class="uppercase"><span class="fw-bold">02</span>typography</p>
+      </div>
+
+      <div class="fonts">
+        <div class="heading-sizes">
+          <div>
+            <p class="font-name ff-sans-normal">
+              Heading 1 - Bellefair Regular - 150px
+            </p>
+            <p class="ff-serif fs-150 font-example-view uppercase">earth</p>
+          </div>
+
+          <div>
+            <p class="font-name ff-sans-normal">
+              Heading 2 - Bellefair Regular - 100px
+            </p>
+            <p class="ff-serif fs-100 font-example-view uppercase">venus</p>
+          </div>
+
+          <div>
+            <p class="font-name ff-sans-normal">
+              Heading 3 - Bellefair Regular - 56px
+            </p>
+            <p class="ff-serif fs-56 font-example-view uppercase">
+              JUPITER & SATURN
+            </p>
+          </div>
+
+          <div>
+            <p class="font-name ff-sans-normal">
+              Heading 4 - Bellefair Regular - 32px
+            </p>
+            <p class="font-example-view ff-serif fs-32 uppercase">
+              URANUS, NEPTUNE, & PLUTO
+            </p>
+          </div>
+
+          <div>
+            <p class="font-name ff-sans-normal">
+              Heading 5 - Barlow Condensed Regular - 28px - 4.75 Character Space
+            </p>
+            <p class="font-example-view ff-sans-normal fs-28 uppercase">
+              SO, YOU WANT TO TRAVEL TO SPACE
+            </p>
+          </div>
+        </div>
+
+        <div class="text-sizes">
+          <div>
+            <p class="font-name ff-sans-normal">
+              Subheading 1 - Bellefair Regular - 28px
+            </p>
+            <p class="font-example-view ff-serif fs-28 uppercase">384,400 km</p>
+          </div>
+
+          <div>
+            <p class="font-name ff-sans-normal">
+              Subheading 2 - Barlow Condensed Regular - 14px - 2.35 Character
+              Space
+            </p>
+            <p class="font-example-view ff-sans-cond fs-14 uppercase">
+              AVG. DISTANCE
+            </p>
+          </div>
+
+          <div>
+            <p class="font-name ff-sans-normal">
+              Nav Text - Barlow Condensed Regular - 16px - 2.7 Character Space
+              Space
+            </p>
+            <p class="font-example-view ff-sans-cond fs-16 uppercase">EUROPA</p>
+          </div>
+
+          <div class="text-block-example">
+            <p class="text-block-example__heading text-light ff-sans-normal">
+              Body Text
+            </p>
+            <p class="text-block-example__p ff-sans-normal">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+              Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi
+              neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium,
+              ligula sollicitudin laoreet viverra, tortor libero sodales leo,
+              eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo.
+              Suspendisse potenti.Lorem ipsum dolor sit amet, consectetuer
+              adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh
+              nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel,
+              nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor
+              libero sodales leo, eget blandit nunc tortor eu nibh. Nullam
+              mollis. Ut justo. Suspendisse potenti.Lorem ipsum dolor sit amet,
+              consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque
+              aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id,
+              mattis vel, nisi.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="heading">
+        <p class="uppercase">
+          <span class="fw-bold">03</span>interactive elements
+        </p>
+      </div>
+
+      <nav class="bck-clr-white nav-bar ff-sans-cond uppercase">
+        <ul>
+          <li><span class="fw-bold margin-rght">00</span>active</li>
+          <li><span class="fw-bold margin-rght">01</span>hovered</li>
+          <li><span class="fw-bold margin-rght">02</span>idle</li>
+        </ul>
+      </nav>
+    </main>
+  </body>
+</html>
