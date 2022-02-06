@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600&family=Barlow:wght@200;300;400;500&display=swap");
+
+:root {
+  --background-home-desktop: url("../assets/home/background-home-desktop.jpg");
+  --background-home-tablet: url("../assets/home/background-home-tablet.jpg");
+  --background-home-mobile: url("../assets/home/background-home-mobile.jpg");
+
+  --clr-dark: 230 35% 7%;
+  --clr-light: 231 77% 90%;
+  --clr-white: 0 0% 100%;
+
+  --ff-serif: "Bellefair", serif;
+  --ff-sans-cond: "Barlow Condensed", sans-serif;
+  --ff-sans-normal: "Barlow", sans-serif;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--background-home-desktop) no-repeat center;
+  background-size: cover;
+
+  font-size: 18px;
+  line-height: 32px;
+  color: hsl(var(--clr-white));
+  font-family: var(--ff-sans-normal);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* UTILITY CLASSES */
+
+.left {
+  left: 0;
+}
+.top {
+  top: 0;
+}
+.right {
+  right: 0;
+}
+.bottom {
+  bottom: 0;
+}
+.brdr-rd-bl {
+  border-bottom-left-radius: 100%;
+}
+.brdr-rd-br {
+  border-bottom-right-radius: 100%;
+}
+.brdr-rd-tl {
+  border-top-left-radius: 100%;
+}
+.brdr-rd-tr {
+  border-top-right-radius: 100%;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.ff-sans-normal {
+  font-family: var(--ff-sans-normal);
+}
+.ff-serif {
+  font-family: var(--ff-serif);
+}
+.ff-sans-cond {
+  font-family: var(--ff-sans-cond);
+}
+
+/* HEADER START */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 0em 0em 4em;
+  width: 100%;
+}
+
+.logo {
+  height: 3em;
+  width: 3em;
+  position: relative;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.logo__element {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  background-color: hsl(var(--clr-white));
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  background-color: hsl(var(--clr-white) / 0.04);
+  backdrop-filter: blur(80px);
+  position: relative;
+}
+
+.nav::before {
+  content: "";
+  position: absolute;
+  width: 30vw;
+  height: 1px;
+  background-color: hsl(var(--clr-white) / 0.25);
+  right: 95%;
+  top: calc(50% - 1px);
+}
+
+.nav__list {
+  display: flex;
+  width: 65%;
+  justify-content: space-between;
+}
+
+.nav-link {
+  padding: 2em 0.3em;
+  cursor: pointer;
+  letter-spacing: 0.2em;
+}
+
+.nav-link:hover {
+  box-shadow: inset 0px -2px 0px 0px hsl(var(--clr-white) / 0.04);
+}
+
+.nav-link:active {
+  box-shadow: inset 0px -2px 0px 0px hsl(var(--clr-white));
+}
+.nav-link span {
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+
+/* HEADER END*/
+
+@media screen and (max-width: 1300px) {
+  .nav__list {
+    width: 80%;
+  }
+
+  body {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: var(--background-home-tablet) no-repeat center;
+    background-size: cover;
+
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .nav__list {
+    width: 90%;
+  }
+
+  .nav-link span {
+    display: none;
+  }
+
+  .nav::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    background: var(--background-home-mobile) no-repeat center;
+    background-size: cover;
+
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  header {
+    background: red;
+  }
+}

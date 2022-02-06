@@ -235,7 +235,7 @@ ul {
 
 .nav-bar li {
   cursor: pointer;
-  padding: 2em 0;
+  padding: 2em;
 }
 
 .nav-bar li:hover {
