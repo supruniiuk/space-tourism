@@ -25,6 +25,7 @@
 
   background-color: hsl(var(--clr-white));
   color: hsl(var(--clr-dark));
+  font-size: 28px;
 
   transition: all 1s;
   cursor: pointer;
@@ -49,4 +50,48 @@
 
 .explore-btn:active {
   transform: scale(0.9);
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 100vw;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .explore-btn {
+    position: static;
+
+    width: 7em;
+    height: 7em;
+
+    transform: translateX(calc(50vw - 3.5em));
+  }
+
+  .explore-btn::before {
+    width: 7em;
+    height: 7em;
+  }
+
+  .explore-btn:hover:before,
+  .explore-btn:active:before {
+    width: 10em;
+    height: 10em;
+  }
+  .main {
+    height: 60vh;
+  }
+
+  .main > div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .fs-28 {
+    font-size: 16px;
+  }
+  .fs-150 {
+    font-size: 90px;
+  }
 }
