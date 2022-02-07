@@ -28,9 +28,12 @@ body {
   background-size: cover;
 
   font-size: 18px;
-  line-height: 32px;
   color: hsl(var(--clr-white));
   font-family: var(--ff-sans-normal);
+}
+
+p {
+  line-height: 1.5em;
 }
 
 ul {
@@ -41,6 +44,10 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.wrapper {
+  padding: 0em 4em;
 }
 
 /* UTILITY CLASSES */
@@ -80,6 +87,30 @@ a {
 }
 .ff-sans-cond {
   font-family: var(--ff-sans-cond);
+}
+.fs-14 {
+  font-size: 14px;
+  letter-spacing: 2.35px;
+}
+.fs-16 {
+  font-size: 16px;
+  letter-spacing: 2.7px;
+}
+.fs-28 {
+  font-size: 28px;
+  letter-spacing: 4.75px;
+}
+.fs-32 {
+  font-size: 32px;
+}
+.fs-56 {
+  font-size: 56px;
+}
+.fs-100 {
+  font-size: 100px;
+}
+.fs-150 {
+  font-size: 150px;
 }
 
 /* HEADER START */
@@ -202,6 +233,10 @@ header {
 
   header {
     padding: 2em 0em 0em 2em;
+  }
+
+  .wrapper {
+    padding: 0em 2em;
   }
 
   .burger-menu {
