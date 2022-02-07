@@ -23,6 +23,7 @@
 
 body {
   min-height: 100vh;
+  width: 100%;
   background: var(--background-home-desktop) no-repeat center;
   background-size: cover;
 
@@ -92,11 +93,12 @@ header {
 }
 
 .logo {
-  height: 3em;
-  width: 3em;
   position: relative;
   border-radius: 100%;
   overflow: hidden;
+
+  width: 3em;
+  height: 3em;
 }
 
 .logo__element {
@@ -144,6 +146,7 @@ header {
 .nav-link:active {
   box-shadow: inset 0px -2px 0px 0px hsl(var(--clr-white));
 }
+
 .nav-link span {
   font-weight: bold;
   margin-right: 0.5em;
@@ -171,8 +174,12 @@ header {
     line-height: 17px;
   }
 
+  header {
+    padding: 0em 0em 0em 4em;
+  }
+
   .nav__list {
-    width: 90%;
+    width: 95%;
   }
 
   .nav-link span {
@@ -194,6 +201,61 @@ header {
   }
 
   header {
-    background: red;
+    padding: 2em 0em 0em 2em;
   }
+
+  .burger-menu {
+    display: block;
+    background: url("../assets/shared/icon-hamburger.svg") no-repeat;
+    margin-right: 2em;
+  }
+
+  .close-menu {
+    display: block;
+    background: url("../assets/shared/icon-close.svg") no-repeat center;
+    float: right;
+    margin-right: 2em;
+  }
+
+  .nav {
+    display: none;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 60vw;
+    padding: 2.5em 0em 0em 3em;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 2em;
+    width: 100%;
+  }
+
+  .nav-link {
+    padding: 1em 0.3em;
+    cursor: pointer;
+    letter-spacing: 0.2em;
+  }
+
+  .nav-link span {
+    display: inline-block;
+  }
+
+  .nav-link:hover {
+    box-shadow: inset -2px 0px 0px 0px hsl(var(--clr-white) / 0.04);
+  }
+
+  .nav-link:active {
+    box-shadow: inset -2px 0px 0px 0px hsl(var(--clr-white));
+  }
+}
+
+.icon {
+  width: 2em;
+  height: 2em;
+  background-size: cover;
 }
