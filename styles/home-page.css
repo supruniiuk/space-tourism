@@ -1,4 +1,4 @@
-.main {
+.home-page {
   height: 65vh;
   width: 60vw;
   display: flex;
@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.main > div {
+.home-page > div {
   width: 65%;
 }
 
@@ -53,9 +53,9 @@
 }
 
 @media screen and (max-width: 1050px) {
-  .main {
+  .home-page {
     height: 60vh;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     text-align: center;
   }
@@ -66,7 +66,7 @@
     width: 7em;
     height: 7em;
 
-    transform: translateX(calc(50vw - 3.5em));
+    margin: 0 auto;
   }
 
   .explore-btn::before {
@@ -80,7 +80,7 @@
     height: 10em;
   }
 
-  .main > div {
+  .home-page > div {
     width: 100%;
   }
 }
