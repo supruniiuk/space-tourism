@@ -1,0 +1,33 @@
+:root {
+  --background-home-desktop: url("../assets/destination/background-destination-desktop.jpg");
+  --background-home-tablet: url("../assets/destination/background-destination-tablet.jpg");
+  --background-home-mobile: url("../assets/destination/background-destination-tablet.jpg");
+}
+
+.planet {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.planet > div {
+  max-width: 30%;
+}
+
+.planet__info .main-info {
+  padding: 0em 0em 3em 0em;
+}
+
+.add-info {
+  display: flex;
+  padding-top: 1em;
+  border-top: 1px solid hsl(var(--clr-white) / 0.3);
+}
+
+.add-info p:first-child {
+  margin-right: 2em;
+}
+
+.add-info span {
+  display: block;
+}

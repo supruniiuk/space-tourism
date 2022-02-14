@@ -1,1 +1,0 @@
-const destination = `<h1>Destination</h1>`
