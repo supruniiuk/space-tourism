@@ -22,7 +22,6 @@
 }
 
 body {
-  min-height: 100vh;
   width: 100%;
   background: var(--background-home-desktop) no-repeat center;
   background-size: cover;
