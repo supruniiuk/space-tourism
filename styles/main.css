@@ -44,6 +44,7 @@ ul {
 
 ul li {
   height: 100%;
+  cursor: pointer;
 }
 
 a {
@@ -52,7 +53,7 @@ a {
 }
 
 .wrapper {
-  padding: 0em 4em;
+  padding: 0 10%;
 }
 
 /* UTILITY CLASSES */
@@ -171,7 +172,6 @@ header {
 
 .nav-link {
   padding: 2em 0.3em;
-  cursor: pointer;
   letter-spacing: 0.2em;
 }
 
@@ -212,6 +212,9 @@ header {
 
 /* HEADING END */
 
+main {
+  margin: 3em 7em;
+}
 
 @media screen and (max-width: 1300px) {
   .nav__list {
@@ -231,6 +234,14 @@ header {
 
     font-size: 14px;
     line-height: 17px;
+  }
+
+  main {
+    margin: 3em;
+  }
+
+  .heading {
+    font-size: 20px;
   }
 
   header {
@@ -263,8 +274,8 @@ header {
     padding: 2em 0em 0em 2em;
   }
 
-  .wrapper {
-    padding: 0em 2em;
+  main {
+    margin: 3em 1em;
   }
 
   .burger-menu {
