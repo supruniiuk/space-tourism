@@ -30,6 +30,8 @@ body {
   font-size: 18px;
   color: hsl(var(--clr-white));
   font-family: var(--ff-sans-normal);
+  
+  scroll-behavior: smooth;
 }
 
 p {
@@ -104,6 +106,10 @@ main {
   font-size: 16px;
   letter-spacing: 2.7px;
 }
+.fs-23 {
+  font-size: 23px;
+  letter-spacing: 3px;
+} 
 .fs-28 {
   font-size: 28px;
   letter-spacing: 4.75px;

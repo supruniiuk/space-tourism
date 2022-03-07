@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space tourism</title>
+
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/navigation.css" />
+    <link rel="stylesheet" href="./styles/destination.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo circle">
+        <div class="logo__element left top brdr-rd-br"></div>
+        <div class="logo__element right top brdr-rd-bl"></div>
+        <div class="logo__element left bottom brdr-rd-tr"></div>
+        <div class="logo__element right bottom brdr-rd-tl"></div>
+      </div>
+
+      <div class="burger-menu icon"></div>
+
+      <nav class="nav ff-sans-cond">
+        <div class="icon close-menu"></div>
+
+        <ul class="nav__list uppercase">
+          <li class="nav-link">
+            <a><span>00</span>home</a>
+          </li>
+          <li class="nav-link active-link">
+            <a><span>01</span>destination</a>
+          </li>
+          <li class="nav-link">
+            <a><span>02</span>crew</a>
+          </li>
+          <li class="nav-link">
+            <a><span>03</span>technology</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <div class="heading">
+          <p class="uppercase">
+            <span class="fw-bold">01</span>pick your destination
+          </p>
+        </div>
+
+        <div class="planet">
+          <div class="planet__img">
+            <img src="../assets/destination/image-moon.png" />
+          </div>
+          <div class="planet__info">
+            <ul class="planet__list fs-23 ff-sans-cond uppercase">
+              <li>Moon</li>
+              <li>Titan</li>
+              <li>Europa</li>
+              <li>Mars</li>
+            </ul>
+
+            <div class="main-info">
+              <p class="planet__name ff-serif fs-100 uppercase">MOON</p>
+              <p class="planet__descr ff-sans-normal">
+                See our planet as you’ve never seen it before. A perfect
+                relaxing trip away to help regain perspective and come back
+                refreshed. While you’re there, take in some history by visiting
+                the Luna 2 and Apollo 11 landing sites.
+              </p>
+            </div>
+
+            <div class="add-info fs-32">
+              <p class="uppercase ff-serif">
+                <span class="ff-sans-cond fs-16">avg. distance</span>
+                <span class="planet__avg">384,400 km</span>
+              </p>
+              <p class="uppercase ff-serif">
+                <span class="ff-sans-cond fs-16">Est. travel time</span>
+                <span class="planet__ttime">3 days</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/menuControl.js"></script>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/content/planets.js"></script>
+    <script src="./js/picker/planetList.js"></script>
+    
+  </body>
+</html>

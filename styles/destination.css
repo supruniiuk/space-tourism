@@ -1,0 +1,63 @@
+:root {
+  --background-home-desktop: url("../assets/destination/background-destination-desktop.jpg");
+  --background-home-tablet: url("../assets/destination/background-destination-tablet.jpg");
+  --background-home-mobile: url("../assets/destination/background-destination-mobile.jpg");
+}
+
+.wrapper {
+  padding: 2em 8em 4em;
+}
+
+.planet {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.planet__img {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.planet__info {
+  flex-basis: 50%;
+}
+
+.main-info,
+.add-info,
+.planet__list {
+  width: 70%;
+  margin: 0 auto;
+  align-self: center;
+}
+
+.add-info {
+  display: flex;
+  gap: 100px;
+
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid hsl(var(--clr-white) / 0.2);
+}
+
+.planet__avg,
+.planet__ttime {
+  display: block;
+}
+
+.planet__list {
+  display: flex;
+  gap: 3em;
+}
+
+.planet__list li {
+  padding-bottom: 7px;
+}
+
+.planet__list li:hover {
+  box-shadow: inset 0px -2px 0px 0px hsl(var(--clr-white) / 0.04);
+}
+
+.planet__list li:active {
+  box-shadow: inset 0px -2px 0px 0px hsl(var(--clr-white));
+}
