@@ -30,7 +30,7 @@ body {
   font-size: 18px;
   color: hsl(var(--clr-white));
   font-family: var(--ff-sans-normal);
-  
+
   scroll-behavior: smooth;
 }
 
@@ -109,7 +109,7 @@ main {
 .fs-23 {
   font-size: 23px;
   letter-spacing: 3px;
-} 
+}
 .fs-28 {
   font-size: 28px;
   letter-spacing: 4.75px;
@@ -156,6 +156,20 @@ main {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .fs-23 {
+    font-size: 20px;
+  }
+
+  .fs-100 {
+    font-size: 80px;
+  }
+
+  .fs-32 {
+    font-size: 25px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   body {
     background: var(--background-home-tablet) no-repeat center;
@@ -188,6 +202,10 @@ main {
   .nav::before {
     display: none;
   }
+
+  .fs-150 {
+    font-size: 130px;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -197,6 +215,23 @@ main {
 
     font-size: 16px;
     line-height: 19px;
+  }
+
+  .fs-23 {
+    font-size: 17px;
+  }
+
+  .fs-100 {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fs-150 {
+    font-size: 100px;
+  }
+  .fs-28 {
+    font-size: 25px;
   }
 }
 
