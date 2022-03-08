@@ -49,6 +49,7 @@
 
 .explore-btn:active {
   transform: scale(0.9);
+  color: hsl(var(--clr-white));
 }
 
 @media screen and (max-width: 1008px) {
@@ -101,4 +102,3 @@
     height: 11em;
   }
 }
-

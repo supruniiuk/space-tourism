@@ -64,10 +64,13 @@
 
 .planet__list li:hover {
   box-shadow: inset 0px -2px 0px 0px hsl(var(--clr-white) / 0.04);
+  color: hsl(var(--clr-white))
 }
 
 .planet__list li:active {
   box-shadow: inset 0px -2px 0px 0px hsl(var(--clr-white));
+  color: hsl(var(--clr-white))
+
 }
 
 .planet__descr {

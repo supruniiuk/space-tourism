@@ -1,0 +1,37 @@
+:root {
+  --background-home-desktop: url("../assets/crew/background-crew-desktop.jpg");
+  --background-home-tablet: url("../assets/crew/background-crew-tablet.jpg");
+  --background-home-mobile: url("../assets/crew/background-crew-mobile.jpg");
+}
+
+.wrapper {
+  padding: 2em 8em 0em;
+  width: 100%;
+  height: 100%;
+}
+
+.member {
+  display: flex;
+}
+
+.member__img {
+  width: 50%;
+  text-align: center;
+}
+
+.member__info {
+  width: 50%;
+}
+
+.member__list ul {
+  display: flex;
+  column-gap: 2em;
+}
+
+.member__list li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(hsl(var(--clr-white) / 0.17));
+  background-color: pink;
+}

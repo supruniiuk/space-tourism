@@ -18,6 +18,7 @@
 
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -32,6 +33,7 @@ body {
   font-family: var(--ff-sans-normal);
 
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 p {
@@ -127,6 +129,9 @@ main {
   font-size: 150px;
 }
 
+.grey {
+  color: #d0d6f9;
+}
 /* HEADING START */
 
 .heading {

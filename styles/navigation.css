@@ -61,6 +61,7 @@ header {
 }
 
 .active-link {
+  color: hsl(var(--clr-white));
   box-shadow: inset 0px -2px 0px 0px hsl(var(--clr-white));
 }
 
@@ -146,10 +147,6 @@ header {
   }
 
   .nav-link:active {
-    box-shadow: inset -2px 0px 0px 0px hsl(var(--clr-white));
-  }
-
-  .active-link {
     box-shadow: inset -2px 0px 0px 0px hsl(var(--clr-white));
   }
 }
