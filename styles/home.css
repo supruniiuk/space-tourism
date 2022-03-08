@@ -78,10 +78,6 @@
     transform: scale(0.9);
   }
 
-  .fs-150 {
-    font-size: 130px;
-  }
-
   .main-content__text {
     flex-basis: 100%;
     text-align: center;
@@ -106,11 +102,3 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .fs-150 {
-    font-size: 100px;
-  }
-  .fs-28 {
-    font-size: 25px;
-  }
-}
