@@ -33,7 +33,6 @@ body {
   font-family: var(--ff-sans-normal);
 
   scroll-behavior: smooth;
-  overflow: hidden;
 }
 
 p {
@@ -59,7 +58,7 @@ a {
 main {
   /*background-color: red;*/
   width: 100%;
-  height: 80%;
+  height: 85%;
 }
 
 /* UTILITY CLASSES */
@@ -139,7 +138,7 @@ main {
   line-height: 34px;
   font-family: var(--ff-sans-cond);
   letter-spacing: 0.1em;
-  margin: 1em 0;
+  padding: 1em 0;
 }
 
 .heading span {
@@ -211,6 +210,10 @@ main {
   .fs-150 {
     font-size: 130px;
   }
+
+  .fs-56 {
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -228,6 +231,10 @@ main {
 
   .fs-100 {
     font-size: 70px;
+  }
+
+  .fs-56 {
+    font-size: 30px;
   }
 }
 
