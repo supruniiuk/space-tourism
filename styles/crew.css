@@ -87,7 +87,7 @@
     flex-basis: 60%;
     max-height: 60%;
     width: 100%;
-    top: 45%;
+    top: 50%;
   }
 
   .member__img img {
@@ -117,23 +117,32 @@
     text-align: center;
   }
 
+  .member {
+    position: relative;
+    height: 90%;
+  }
+
   .member,
   .member__info {
     flex-direction: column-reverse;
   }
 
-  .member_info {
-    flex-basis: 40%;
+  .member__info {
+    flex-basis: 50%;
+    justify-content: center;
   }
 
   .member__img {
-    position: relative;
     top: 0;
-    flex-basis: 60%;
-
+    flex-basis: 50%;
+    height: 100%;
     border-bottom: 1px solid hsl(var(--clr-white) / 0.2);
   }
 
+  .member__img {
+    max-height: 50%;
+  }
+  
   .member__list li {
     width: 10px;
     height: 10px;
