@@ -68,13 +68,13 @@
   cursor: pointer;
 }
 
-.active-tech {
-  background: white;
-  color: black;
-}
 
 .tech-picker li:hover {
   background: hsl(var(--clr-white) / 0.5);
+}
+
+.active-tech, .tech-picker li:active  {
+  background: white;
   color: black;
 }
 

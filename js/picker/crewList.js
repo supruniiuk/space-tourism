@@ -19,7 +19,6 @@ for (let i = 0; i < crew.length; i++) {
   crewList.appendChild(member);
 
   member.onclick = () => {
-    console.log("click");
     if (currentMember) {
       currentMember.classList.remove("active-member");
     }
