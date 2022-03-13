@@ -1,0 +1,168 @@
+:root {
+  --background-home-desktop: url("../assets/technology/background-technology-desktop.jpg");
+  --background-home-tablet: url("../assets/technology/background-technology-tablet.jpg");
+  --background-home-mobile: url("../assets/technology/background-technology-mobile.jpg");
+}
+
+.wrapper {
+  padding: 2em 0em 4em 8em;
+  width: 100%;
+  height: 100%;
+}
+
+.technology {
+  display: flex;
+  height: 85%;
+}
+
+.technology > div:first-child {
+  flex-basis: 60%;
+  display: flex;
+  max-width: 60%;
+}
+
+.tech-picker {
+  text-align: center;
+  height: 50%;
+}
+
+.technology__info,
+.tech-picker {
+  align-self: center;
+}
+
+.technology__info p {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.technology__img {
+  height: 100%;
+
+  flex-basis: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.technology__img .landscape {
+  display: none;
+}
+
+.tech-picker ul {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tech-picker li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2em;
+  width: 2em;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid hsl(var(--clr-white) / 0.2);
+
+  cursor: pointer;
+}
+
+.active-tech {
+  background: white;
+  color: black;
+}
+
+.tech-picker li:hover {
+  background: hsl(var(--clr-white) / 0.5);
+  color: black;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    padding: 2em 0em 4em 4em;
+  }
+
+  .technology__img .portrait {
+    width: -webkit-fill-available;
+  }
+
+  .technology__img {
+    height: 90%;
+    width: auto;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .technology > div:first-child {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .tech-picker ul {
+    flex-direction: row;
+  }
+
+  .tech-picker {
+    height: auto;
+    width: 100%;
+  }
+
+  .tech-picker ul {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .technology__img .landscape {
+    display: block;
+    width: 100%;
+  }
+
+  .technology > div:first-child {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .technology__info p {
+    min-width: 100%;
+  }
+
+  .tech-picker ul {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .technology__img .portrait {
+    display: none;
+  }
+
+  .technology {
+    flex-direction: column-reverse;
+  }
+
+  .wrapper {
+    padding: 2em 0em 0em;
+  }
+
+  .heading {
+    padding-left: 2em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .tech-picker ul {
+    width: 100%;
+  }
+
+  .heading {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .technology > div:first-child {
+    max-width: 95%;
+  }
+}

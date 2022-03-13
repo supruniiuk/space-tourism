@@ -158,6 +158,10 @@ main {
     font-size: 14px;
     line-height: 17px;
   }
+
+  .fs-56 {
+    font-size: 45px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -171,6 +175,9 @@ main {
 
   .fs-32 {
     font-size: 25px;
+  }
+  .fs-56 {
+    font-size: 40px;
   }
 }
 
@@ -209,10 +216,6 @@ main {
 
   .fs-150 {
     font-size: 130px;
-  }
-
-  .fs-56 {
-    font-size: 40px;
   }
 }
 

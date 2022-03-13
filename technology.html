@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space tourism</title>
+
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/navigation.css" />
+    <link rel="stylesheet" href="./styles/technology.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo circle">
+        <div class="logo__element left top brdr-rd-br"></div>
+        <div class="logo__element right top brdr-rd-bl"></div>
+        <div class="logo__element left bottom brdr-rd-tr"></div>
+        <div class="logo__element right bottom brdr-rd-tl"></div>
+      </div>
+
+      <div class="burger-menu icon"></div>
+
+      <nav class="nav ff-sans-cond">
+        <div class="icon close-menu"></div>
+
+        <ul class="nav__list uppercase">
+          <li class="nav-link">
+            <a><span>00</span>home</a>
+          </li>
+          <li class="nav-link">
+            <a><span>01</span>destination</a>
+          </li>
+          <li class="nav-link">
+            <a><span>02</span>crew</a>
+          </li>
+          <li class="nav-link active-link">
+            <a><span>03</span>technology</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <div class="heading">
+          <p class="uppercase">
+            <span class="fw-bold">03</span>space launch 101
+          </p>
+        </div>
+
+        <div class="technology">
+          <div>
+            <div class="tech-picker ff-serif fs-32">
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+              </ul>
+            </div>
+
+            <div class="technology__info">
+              <p class="uppercase ff-sans-cond">the terminology...</p>
+              <p class="fs-56 uppercase ff-serif">launch vehicle</p>
+              <p>
+                A launch vehicle or carrier rocket is a rocket-propelled vehicle
+                used to carry a payload from Earth's surface to space, usually
+                to Earth orbit or beyond. Our WEB-X carrier rocket is the most
+                powerful in operation. Standing 150 metres tall, it's quite an
+                awe-inspiring sight on the launch pad!
+              </p>
+            </div>
+          </div>
+
+          <div class="technology__img">
+            <img
+              class="portrait"
+              src="assets/technology/image-launch-vehicle-portrait.jpg"
+            />
+
+            <img
+              class="landscape"
+              src="assets/technology/image-launch-vehicle-landscape.jpg"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/menuControl.js"></script>
+    <script src="./js/navigation.js"></script>
+  </body>
+</html>
