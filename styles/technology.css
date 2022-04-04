@@ -121,6 +121,10 @@
     width: 100%;
   }
 
+  .wrapper {
+    padding: 2em 0em 4em 4em;
+  }
+
   .technology > div:first-child {
     text-align: center;
     margin: 0 auto;
