@@ -22,9 +22,13 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+}
+
+body {
+  height: 100%;
   background: var(--background-home-desktop) no-repeat center;
   background-size: cover;
 
@@ -56,7 +60,6 @@ a {
 }
 
 main {
-  /*background-color: red;*/
   width: 100%;
   height: 85%;
 }
